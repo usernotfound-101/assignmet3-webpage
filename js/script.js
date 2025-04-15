@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function(){
         body.classList.toggle("dark_theme", isLight);
 
         if (isLight){
-            sprite.src="../images/gengar.png";
+            sprite.src="images/gengar.png";
             sprite.alt="Gengar";
             toggleBtn.textContent = "Switch?"
         } else {
-            sprite.src="../images/clefairy.png";
+            sprite.src="images/clefairy.png";
             sprite.alt="Clefairy";
             toggleBtn.textContent = "Switch back?"
         }
