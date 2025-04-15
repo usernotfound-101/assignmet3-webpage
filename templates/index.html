@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href = "../css/styles.css">
+    </head>
+    <body class="platinum_theme light_theme">
+        <button id="themeToggle" class="ds-button">Theme</button>
+        <h1 class="title">About Me</h1>
+        <div class="pkspritec">
+            <img id = "sprite" src="../images/clefairy.png" class="pksprite">
+        </div>
+
+        <div class="profile-section">
+            <img src="../images/ayus.jpeg" alt="Profile photo" class="pfp">
+    
+            <div class="pklist">
+                <ul class="list">
+                    <li><strong>Name:</strong> Ayush Subham Moharana</li>
+                    <li><strong>Age:</strong> 19</li>
+                    <li><strong>Roll Number:</strong> 2024101074</li>
+                    <li><strong>Currently Studying at:</strong> IIIT Hyderabad</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class ="bio">
+            Hello, I am currently a student of IIIT Hyderbad. I have studied in Presidency school in the past.<br>
+            <span id="moreBio" style="display:none;">
+                My hobbies include Football, Arts and Gaming. I am a big fan Pokemon, however have only played Platinum.
+            </span>
+            <button id="readMore" class="ds-button">Read More?</button>
+        </p>
+
+        <div id="morePics" style="display:none;">
+            <h2>More Pictures of My Birthplace</h2>
+            <img src="../images/image1.png" alt="Place 1" class="local-pic">
+            <img src="../images/image2.png" alt="Place 2" class="local-pic">
+        </div>
+        <button id="morePicsBtn" class="ds-button">More Pictures</button>
+
+        <div class="pokedex">
+            <dl class="list">
+                <li><strong>Previous Schools:</strong> Presidency East, Chaitanya</li>
+                <li><strong>Computer Languages Known:</strong> C++,C,HTML and Python</li>
+                <li><strong>Languages Known:</strong> English, Hindi, Odia and some French</li>
+                <li><strong>Last Known Location: </strong>17.445982164928807, 78.34929645563403</li>
+                <li><strong>Favourite food: </strong>Crab and Rice (Freshly caught and not more than 2 days old)</li>
+                <li><strong>Achievements:</strong> Nothing noteable, won a running race once</li>
+            </dl>
+        </div>
+
+        <a href="technical_skills.html" class="ds-button">Technical Skills Details</a>
+        <a href="../Ayush_CV.pdf" class="ds-button">CV</a>
+
+        <div class="analyzer-container">
+            <h2>Text Analyzer</h2>
+            <textarea id="textInput" placeholder="Paste or type your text here (10,000+ words recommended)..."></textarea>
+            <div id="wordCountWarning">Warning: Text should have more than 10,000 words for best analysis.</div>
+            
+            <button id="analyzeBtn" class="ds-button">Analyze Text</button>
+            <button id="sampleTextBtn" class="ds-button">Load Sample Text</button>
+            <button id="clearBtn" class="ds-button">Clear Text</button>
+            
+            <div id="loading" class="loading">Analyzing text...</div>
+            
+            <div class="results-container" id="resultsContainer">
+                <div class="result-box">
+                    <h3>Basic Statistics</h3>
+                    <p>Letters: <span id="letterCount">0</span></p>
+                    <p>Words: <span id="wordCount">0</span></p>
+                    <p>Spaces: <span id="spaceCount">0</span></p>
+                    <p>Newlines: <span id="newlineCount">0</span></p>
+                    <p>Special Symbols: <span id="specialCount">0</span></p>
+                </div>
+                
+                <div class="result-box">
+                    <h3>Pronouns</h3>
+                    <div id="pronounResults"></div>
+                </div>
+                
+                <div class="result-box">
+                    <h3>Prepositions</h3>
+                    <div id="prepositionResults"></div>
+                </div>
+                
+                <div class="result-box">
+                    <h3>Indefinite Articles</h3>
+                    <div id="articleResults"></div>
+                </div>
+            </div>
+        </div>
+
+        <a class="ds-button" href="https://github.com/usernotfound-101">Github!</a>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
+
